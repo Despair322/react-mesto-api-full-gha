@@ -1,0 +1,14 @@
+.popup__message {
+  color: rgb(0, 0, 0);
+  max-width: 358px;
+  padding: 0;
+  margin: 40px 18px 50px;
+  text-align: center;
+}
+
+@media screen and (width > 470px) {
+  .popup__message {
+    margin-top: 32px;
+    margin-bottom: 60px;
+  }
+}

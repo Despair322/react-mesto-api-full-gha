@@ -1,0 +1,10 @@
+.authorization__input{
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    min-width: 27px;
+    padding-bottom: 13px;
+    margin-bottom: 30px;
+    color: white;
+}

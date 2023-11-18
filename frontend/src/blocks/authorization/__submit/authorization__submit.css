@@ -1,0 +1,22 @@
+.authorization__submit{
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (width > 700ox) {
+    .authorization__submit{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.authorization__submit:hover{
+    opacity: 60%;
+}
