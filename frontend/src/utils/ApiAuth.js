@@ -1,13 +1,13 @@
 import { setToken } from "./Token";
-
-export const BASE_URL = 'http://localhost:3000';
+require('dotenv').config();
+const { REACT_APP_API_URL = 'http://e-dymov.nomoredomainsmonster.ru/api' } = process.env;
 
 function checkResponse(res) {
     return res.ok ? res.json() : res.json().then((err) => Promise.reject({ error: err, status: res.status }))
 }
 
 export const register = ({ password, email }) => {
-    return fetch(`${BASE_URL}/signup`, {
+    return fetch(`${REACT_APP_API_URL}/signup`, {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -19,7 +19,7 @@ export const register = ({ password, email }) => {
 };
 
 export const authorize = ({ email, password }) => {
-    return fetch(`${BASE_URL}/signin`, {
+    return fetch(`${REACT_APP_API_URL}/signin`, {
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -42,7 +42,7 @@ export const authorize = ({ email, password }) => {
 };
 
 export const logout = () => {
-    return fetch(`${BASE_URL}/logout`, {
+    return fetch(`${REACT_APP_API_URL}/logout`, {
         method: 'GET',
         credentials: 'include',
         headers: {
@@ -54,7 +54,7 @@ export const logout = () => {
 }
 
 export const checkToken = () => {
-    return fetch(`${BASE_URL}/users/me`, {
+    return fetch(`${REACT_APP_API_URL}/users/me`, {
         method: 'GET',
         credentials: 'include',
         headers: {

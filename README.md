@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 158.160.131.170
 
-Frontend https://...
+Frontend https://e-dymov.nomoredomainsmonster.ru
 
-Backend https://...
+Backend https://e-dymov.nomoredomainsmonster.ru

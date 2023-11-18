@@ -13,9 +13,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Login from "./Login";
 import Register from "./Register";
 import ProtectedRoute from "./ProtectedRoute";
-// import { getToken, removeToken } from "../utils/Token";
 import InfoTooltip from "./InfoTooltip";
-// import { useCookies } from 'react-cookie';
 
 function App() {
 

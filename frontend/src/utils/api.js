@@ -1,3 +1,5 @@
+require('dotenv').config();
+const { REACT_APP_API_URL = 'http://e-dymov.nomoredomainsmonster.ru/api' } = process.env;
 class Api {
   constructor(options) {
     this._options = options;
@@ -89,7 +91,7 @@ class Api {
 }
 
 export const api = new Api({
-  baseUrl: 'http://localhost:3000',
+  baseUrl: REACT_APP_API_URL,
   credentials: 'include',
   headers: {
     'Content-Type': 'application/json'
