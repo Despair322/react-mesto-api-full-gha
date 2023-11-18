@@ -30,7 +30,7 @@ app.get('/crash-test', () => {
     throw new Error('Сервер сейчас упадёт');
   }, 0);
 });
-app.use(appRouter);
+app.use('/api/', appRouter);
 app.use(errorLogger);
 app.use(errors());
 app.use(errorHandler);

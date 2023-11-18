@@ -1,5 +1,5 @@
 import { setToken } from "./Token";
-require('dotenv').config();
+// require('dotenv').config();
 const { REACT_APP_API_URL = 'http://e-dymov.nomoredomainsmonster.ru/api' } = process.env;
 
 function checkResponse(res) {
