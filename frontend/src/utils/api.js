@@ -1,5 +1,5 @@
 // require('dotenv').config();
-const { REACT_APP_API_URL = 'http://e-dymov.nomoredomainsmonster.ru' } = process.env;
+const { REACT_APP_API_URL = 'https://e-dymov.nomoredomainsmonster.ru' } = process.env;
 class Api {
   constructor(options) {
     this._options = options;

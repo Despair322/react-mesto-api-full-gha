@@ -1,6 +1,6 @@
 import { setToken } from "./Token";
 // require('dotenv').config();
-const { REACT_APP_API_URL = 'http://e-dymov.nomoredomainsmonster.ru/api' } = process.env;
+const { REACT_APP_API_URL = 'https://e-dymov.nomoredomainsmonster.ru/api' } = process.env;
 
 function checkResponse(res) {
     return res.ok ? res.json() : res.json().then((err) => Promise.reject({ error: err, status: res.status }))
