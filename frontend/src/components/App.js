@@ -39,7 +39,6 @@ function App() {
 
       api.getUserInfo()
         .then(info => {
-          console.log(info);
           setCurrentUser(info);
         })
         .catch(err => { console.log(err) })
